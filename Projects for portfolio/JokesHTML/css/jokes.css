@@ -1,0 +1,62 @@
+body {
+    background-color: rgb(51, 48, 48);
+    text-align: center;
+    font-family: Montserrat;
+    padding: 40px 20px;
+}
+/* Bigger title */
+h1 {
+    font-size: 60px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.dad {
+    color: rgb(14, 241, 241);
+}
+
+.jokes {
+    color: #1988c9;
+}
+
+/* jokes.css */
+
+/* Button Styles */
+.btn {
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #003049;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #138496;
+    transform: translateY(-2px);
+}
+
+/* List Styles */
+/* Joke list */
+#jokes {
+    list-style-type: none;
+    padding: 0;
+    margin: 30px auto;
+    max-width: 800px;
+}
+
+#jokes li {
+    color: white;
+    text-align: center;
+    background-color: #333;
+    padding: 15px 20px;
+    margin: 10px 0;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}

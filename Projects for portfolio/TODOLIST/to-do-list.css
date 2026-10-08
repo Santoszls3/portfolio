@@ -1,0 +1,36 @@
+header::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #212529;
+    margin: 15px auto 0;
+    border-radius: 10px;
+}
+main {
+    background-color: #f3f5f7;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+body {
+    background-color: #b56b6b;
+}
+
+h1,
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+h1 {
+    color: #3d3030;
+    text-decoration: none;
+}
+.delete {
+    background-color: #d9a3a3;
+    border-radius: 7px;
+    font-size: 13px;
+    padding: 7px 14px;
+    border: none;
+    color: #3d3030;
+}

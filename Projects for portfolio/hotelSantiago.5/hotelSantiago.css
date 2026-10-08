@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Glacial+Indifference&display=swap');
+
+.firstPageBackground {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center vertically */
+    align-items: flex-start; /* Align items to the left */
+    height: 100vh; /* Full screen height */
+    text-align: left; /* Align text to the left */
+    position: relative;
+    padding-left: 30px; /* Add some left padding for better spacing */
+    overflow: hidden; /* Prevents overflow issues */
+}
+
+.first-page {
+    width: 100%; /* Ensures the image is responsive */
+    height: 100%; /* Makes sure it covers the section */
+    object-fit: cover; /* Keeps aspect ratio and covers the whole area */
+    position: absolute; /* Makes sure the text stays on top */
+    top: 0;
+    left: 0;
+}
+
+.text-container {
+    display: inline-block; /* Ensures the border wraps around the content */
+
+    border: 10px solid white; /* Creates a thick white border */
+    background-color: transparent; /* Ensures the inside is transparent */
+    position: relative; /* Ensures the container stays above the image */
+    z-index: 1; /* Ensures the container appears on top */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's dimensions */
+
+}
+
+h1 {
+    position: relative; /* Keeps text above the image */
+    z-index: 1; /* Ensures text appears on top */
+    color: white;
+    text-align: left; /* Align text to the left */
+    font-size: 6VW;
+    display: block;
+    font-family: 'Cardo', serif; /* uses Cardo font */
+    letter-spacing: 10px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 2vw;
+}
+
+h2 {
+    font-family: 'Glacial Indifference', sans-serif;
+    position: relative; /* Keeps text above the image */
+    z-index: 1; /* Ensures text appears on top */
+    color: white;
+    text-align: left; /* Align text to the left */
+    font-size: 2.5VW;
+    display: block;
+    margin-top: -15px;
+    margin-left: 2vw;
+    font-weight: lighter;
+}
+
+
+/************************************ Second Page Styles ********************************/
+.second-page {
+    position: relative;
+    width: 100%;
+    min-height: 80vh; /* Full screen height */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align items to the top */
+    background-color: white; /* Optional: Add a background color for the second page */
+}
+
+
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Align items at the top */
+    flex-wrap: nowrap; /* Makes it responsive */
+    text-align: center;
+    gap: 10px; /* Adds space between the images */
+    padding-top: 50px;
+}
+
+.gallery-item {
+    flex: 1; /* Makes each image take equal space */
+    max-width: 30%; /* Ensures images don’t get too big */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*max-width: 30vw; !* Adjust size if needed *!*/
+    margin: 20px;
+}
+
+.gallery-image {
+    width: 100%; /* Makes the images scale dynamically */
+    max-width: 300px; /* Ensures images don’t get too big */
+    height: auto; /* Maintains aspect ratio */
+    border: 5px solid white; /* Optional: Adds a white border around the images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow */
+}
+p {
+    font-size: 1em;
+    color: #555;
+    max-width: 250px;
+}
+
+.second-page-title {
+    font-family: 'Glacial Indifference', sans-serif;
+    font-size: 2vw; /* Adjust as needed */
+    text-align: center;
+    color: black; /* Different color from page one */
+    margin-top: 50px; /* Adjust spacing */
+    font-weight: normal; /* Different font weight if needed */
+}
+.second-page p {
+    text-align: left;
+}
+
+
+
+/*****************THIRD PAGE****************/
+
+/* Full Third Page Section */
+.third-page {
+    display: flex;               /* Enable Flexbox */
+    justify-content: center;     /* Center contents horizontally */
+    align-items: center;         /* Center vertically */
+    width: 100%;
+    height: 100vh;               /* Full viewport height */
+    box-sizing: border-box;      /* Include padding and border in dimensions */
+    position: relative;          /* Keep it in the document flow */
+    overflow: hidden;            /* Prevent content from spilling out */
+    margin: 0;                   /* Reset any margins */
+}
+
+/* Background Image */
+.third-page-image {
+    position: absolute;          /* Ensure it stays in the background */
+    width: 100%;                 /* Full width */
+    height: 100%;                /* Full height */
+    object-fit: cover;           /* Ensure it scales properly */
+    top: 0;
+    left: 0;
+    z-index: 0;                  /* Behind other content */
+}
+
+/* Background Wrapper */
+.thirdPageBackground {
+    position: relative;          /* Ensure child elements are positioned relative to this */
+    width: 100%;
+    height: 100vh;               /* Full screen height */
+    display: flex;
+    justify-content: center;     /* Center vertically */
+    align-items: center;         /* Center horizontally */
+    box-sizing: border-box;      /* Include padding and border in dimensions */
+}
+
+/* Left-side Image (on top of background but behind the rectangle) */
+.left-side-image {
+    position: absolute;          /* Float on top */
+    left: 12.5vw;                 /* 200px from the left side */
+    width: 29vw;                /* Adjust image width as needed */
+    height: auto;                /* Maintain aspect ratio */
+    z-index: 1;                  /* Between background (0) and rectangle (2) */
+}
+
+/* Rectangle Outline - Centered */
+.rectangle-outline {
+    position: absolute;          /* Float on top */
+    width: 80%;                  /* Width of the rectangle */
+    height: 45%;                 /* Height of the rectangle */
+    border: 13px solid white;    /* White border, 10px thick */
+    box-sizing: border-box;      /* Include border in dimensions */
+    z-index: 2;                  /* Keep the rectangle above the background */
+}
+
+/* Text Container - Aligned to the right side of the rectangle using Flexbox */
+.thirdText-container {
+    display: flex;               /* Enable Flexbox for this container */
+    flex-direction: column;      /* Stack text vertically */
+    justify-content: center;     /* Center text vertically inside the container */
+    align-items: flex-end;       /* Align text to the right side */
+    position: absolute;          /* Float on top */
+    right: 10%;                  /* Push to the right side of the rectangle */
+    z-index: 3;                  /* Ensure text is on top of everything */
+    padding: 20px;               /* Add padding to avoid text touching the edges */
+}
+
+/* Text Styling */
+.thirdText-container h1 {
+    font-size: 4.5vw;             /* Adjust heading size */
+    margin: 0;                   /* Remove default margin */
+}
+
+.thirdText-container h2 {
+    font-size: 1vw;             /* Adjust subheading size */
+    margin: 0;                   /* Remove default margin */
+}
+
+

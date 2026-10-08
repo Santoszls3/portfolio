@@ -1,0 +1,54 @@
+/* Ensures the images shrink to fit on smaller screens */
+@media (max-width: 900px) {
+    .gallery-item {
+        max-width: 28%; /* Allows scaling down */
+    }
+
+    .gallery-image {
+        max-width: 100%; /* Keeps images fully responsive */
+    }
+}
+
+/* Further scale down on very small screens */
+@media (max-width: 600px) {
+    .image-container {
+        gap: 5px; /* Reduce spacing */
+    }
+
+    .gallery-item {
+        max-width: 30%; /* Keeps three images in one row */
+    }
+
+    .gallery-image {
+        max-width: 90%; /* Makes sure images don’t overflow */
+    }
+
+    h2, p {
+        font-size: 0.9em; /* Scale down text size */
+    }
+}
+
+/* Stack images vertically on small screens */
+@media (max-width: 480px) {
+    .image-container {
+        flex-direction: column; /* Stack images */
+        align-items: center; /* Center them */
+    }
+
+    .gallery-item {
+        max-width: 90%; /* Allows images to take most of the width */
+    }
+
+    .gallery-image {
+        max-width: 100%; /* Ensures images are responsive */
+    }
+
+    .second-page h2 {
+        font-size: 1.2em; /* Slightly smaller for mobile */
+    }
+
+    p {
+        text-align: center; /* Center text on mobile */
+        font-size: .9em; /* Keep text readable */
+    }
+}
